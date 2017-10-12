@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YunBaSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YunBaSDK.'
+  s.summary          = 'YunBaSDK for iOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  YunBaSDK for iOS v1.7.4.Add to Cocoapods.
                        DESC
 
   s.homepage         = 'https://github.com/bing900717/YunBaSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'bing900717' => 'yaoxb@ramnova.com' }
+  s.author           = { 'xiaobing.yao' => 'bing900717@gmail.com' }
   s.source           = { :git => 'https://github.com/bing900717/YunBaSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.source_files = 'YunBaSDK/Classes/**/*.{h,m}'
+  s.vendored_library = 'YunBaSDK/libYunBa.a'
+  s.frameworks = 'SystemConfiguration'
+ 
 
-  s.source_files = 'YunBaSDK/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YunBaSDK' => ['YunBaSDK/Assets/*.png']
